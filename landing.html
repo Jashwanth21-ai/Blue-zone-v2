@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060a10">
+  <meta name="description" content="Build the confidence to defend. BlueZone takes you from cybersecurity foundations to hands-on investigations, with guided labs, challenges, and measurable progress.">
+  <meta property="og:title" content="BlueZone — The confidence to defend.">
+  <meta property="og:description" content="Learn the systems. Follow the evidence. Build practical cybersecurity skills, one mission at a time.">
+  <title>BlueZone — The confidence to defend.</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/landing.css">
+  <script src="/static/landing.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="/" class="wordmark" aria-label="BlueZone home"><img src="/static/favicon.svg" width="33" height="33" alt=""><span>BlueZone<span class="brand-period">.</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#experience">The experience</a><a href="#curriculum">Learning paths</a><a href="#mission">Final mission</a></nav>
+      <div class="nav-actions"><a class="login-link" href="/app">Log in</a><a href="/app?mode=register" class="button button-small">Start learning <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal" aria-hidden="true"></span> YOUR CYBERSECURITY JOURNEY STARTS HERE</p>
+        <h1 id="hero-title">The confidence<br>to <span class="gradient-text">defend.</span></h1>
+        <p class="hero-description">Learn the systems. Follow the evidence. Build practical cybersecurity skills through guided missions that turn curiosity into capability.</p>
+        <div class="hero-actions"><a href="/app?mode=register" class="button">Enter your BlueZone <span aria-hidden="true">↗</span></a><a href="#experience" class="text-link">Explore the experience <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-note"><span class="tiny-cross" aria-hidden="true">+</span> Beginner-friendly. Practice-driven. Built for progress.</div>
+      </div>
+
+      <div class="hero-console" aria-label="Interactive mission preview">
+        <div class="console-topline"><span class="mono">BLUEZONE / LAB 02</span><span class="outline-tag">INTERACTIVE PREVIEW</span></div>
+        <div class="console-heading"><span class="lab-icon" aria-hidden="true">&gt;_</span><div><span class="micro-label">SECURITY FOUNDATIONS</span><h2>A file open to everyone</h2></div></div>
+        <div class="preview-tabs" role="tablist" aria-label="Mission preview steps">
+          <button id="tab-learn" class="preview-tab is-active" role="tab" aria-controls="panel-learn" aria-selected="true" tabindex="0" data-step="learn"><span>01</span> Learn</button>
+          <button id="tab-inspect" class="preview-tab" role="tab" aria-controls="panel-inspect" aria-selected="false" tabindex="-1" data-step="inspect"><span>02</span> Inspect</button>
+          <button id="tab-solve" class="preview-tab" role="tab" aria-controls="panel-solve" aria-selected="false" tabindex="-1" data-step="solve"><span>03</span> Solve</button>
+        </div>
+        <div class="preview-panels">
+          <div id="panel-learn" class="preview-panel" role="tabpanel" aria-labelledby="tab-learn" tabindex="0">
+            <p class="micro-label">A SMALL SETTING. A BIG DIFFERENCE.</p>
+            <h3>Who can read your secrets?</h3>
+            <p>A service configuration should only be accessible to the account that needs it. Learn to read Linux permissions and spot unnecessary exposure.</p>
+            <div class="permission-breakdown" aria-label="Permissions example: owner read and write, group read, others read"><div><code>rw-</code><span>OWNER</span></div><div><code>r--</code><span>GROUP</span></div><div class="exposed"><code>r--</code><span>EVERYONE</span></div></div>
+            <button class="preview-next" data-go="inspect">Inspect the evidence <span aria-hidden="true">→</span></button>
+          </div>
+          <div id="panel-inspect" class="preview-panel" role="tabpanel" aria-labelledby="tab-inspect" tabindex="0" hidden>
+            <p class="micro-label">READ-ONLY TRAINING SNAPSHOT</p>
+            <div class="mini-terminal"><p><span>analyst@bluezone</span> ~ $ ls -l</p><pre>-rw-r--r--  service  service.env
+-rw-------  analyst  notes.txt
+-rwxr-xr-x  root     healthcheck.sh</pre><p class="terminal-comment"># Every local user can read service.env.</p></div>
+            <p>Look at the final three permission characters. An <code>r</code> means everyone can read this file.</p>
+            <button class="preview-next" data-go="solve">Choose the safer setting <span aria-hidden="true">→</span></button>
+          </div>
+          <div id="panel-solve" class="preview-panel" role="tabpanel" aria-labelledby="tab-solve" tabindex="0" hidden>
+            <p class="micro-label">YOUR FIRST SECURITY DECISION</p>
+            <h3>Keep the secret with its owner.</h3>
+            <p>Which mode grants read and write access to the owner, with no access for anyone else?</p>
+            <div class="answer-options" role="group" aria-label="Choose a file permission mode"><button data-answer="644">644</button><button data-answer="600">600</button><button data-answer="777">777</button></div>
+            <p id="preview-feedback" class="preview-feedback" role="status" aria-live="polite">Choose a setting to check your reasoning.</p>
+          </div>
+        </div>
+        <div class="console-bottom"><span><span class="safe-dot" aria-hidden="true"></span> Contained simulation</span><span>Progress starts in your account <span aria-hidden="true">↗</span></span></div>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 — THE NEXT GENERATION OF DEFENDERS</div>
+    </section>
+
+    <section class="proof-strip" aria-label="The BlueZone curriculum">
+      <div class="container proof-inner"><p>A clear direction.<br><strong>At every level.</strong></p><div><strong>03</strong><span>Structured learning paths</span></div><div><strong>12</strong><span>Assessed missions</span></div><div><strong>01</strong><span>Final investigation</span></div><a href="#curriculum" aria-label="Explore the curriculum"><span aria-hidden="true">↘</span></a></div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-intro"><div><p class="eyebrow">01 / THE EXPERIENCE</p><h2>Knowledge is the start.<br><span class="muted-heading">Practice makes it yours.</span></h2></div><p>Move from understanding a concept to making a decision. Every mission gives you something to examine, a reason to think, and a way to test what you know.</p></div>
+      <div class="experience-grid">
+        <article class="experience-card practice-card"><div class="card-top"><span class="line-icon" aria-hidden="true">⌘</span><span class="micro-label">LEARN BY INVESTIGATING</span></div><h3>Get closer to<br>the evidence.</h3><p>Inspect permissions, follow network flows, and connect events in guided, contained labs.</p><div class="evidence-table" aria-label="Example evidence flow"><div class="evidence-head"><span>UTC</span><span>HOST</span><span>EVENT</span></div><div><time>11:01</time><span>ws-17</span><span>Sign-in</span></div><div><time>11:03</time><span>ws-17</span><span>Process started</span></div><div class="highlight-row"><time>11:05</time><span>ws-17</span><span>Outbound connection ↗</span></div></div><span class="example-label">EXAMPLE / EVENT CORRELATION LAB</span></article>
+        <article class="experience-card tutor-card"><div class="card-top"><span class="line-icon" aria-hidden="true">✧</span><span class="micro-label">GUIDANCE WHEN IT COUNTS</span></div><h3>Keep your momentum.</h3><p>Get a lesson explanation or a useful hint. Optional AI support goes deeper when configured.</p><div class="example-chat"><span class="micro-label">EXAMPLE GUIDANCE</span><p>“What can these logs actually prove?”</p><div><span class="tutor-mark" aria-hidden="true">✧</span><p>Start with what you can observe. Then separate the evidence from your interpretation.</p></div></div></article>
+        <article class="experience-card progress-card"><div class="card-top"><span class="line-icon" aria-hidden="true">↗</span><span class="micro-label">PROGRESS YOU CAN POINT TO</span></div><h3>Earn your next step.</h3><p>Pass assessments, unlock missions, and build a record of the skills you have practiced.</p><div class="skill-steps"><div><span class="step-check" aria-hidden="true">✓</span><div><strong>Understand the concept</strong><span>Build the foundation</span></div></div><div><span class="step-check" aria-hidden="true">✓</span><div><strong>Apply it to the evidence</strong><span>Test your reasoning</span></div></div><div><span class="step-open" aria-hidden="true">↗</span><div><strong>Unlock the next mission</strong><span>Keep moving forward</span></div></div></div></article>
+      </div>
+    </section>
+
+    <section id="curriculum" class="curriculum-section section">
+      <div class="container"><div class="section-intro"><div><p class="eyebrow">02 / YOUR LEARNING PATH</p><h2>Find your starting point.<br><span class="muted-heading">Build toward what’s next.</span></h2></div><p>One connected journey, from your first packet to your final investigation. Complete each mission to earn the next.</p></div>
+        <div class="path-grid">
+          <article class="path-card"><div class="path-meta"><span class="path-number">01</span><span class="level-tag">BEGINNER</span></div><h3>Security<br>foundations.</h3><p>Understand the systems<br>you will defend.</p><ul><li>Networks &amp; security principles</li><li>Linux file permissions</li><li>Web trust boundaries</li><li>Your first sign-in investigation</li></ul><div class="path-bottom"><span>4 missions <span aria-hidden="true">/</span> 550 XP</span><a href="/app?mode=register" aria-label="Start Security foundations">↗</a></div></article>
+          <article class="path-card featured-path"><div class="path-meta"><span class="path-number">02</span><span class="level-tag">INTERMEDIATE</span></div><h3>The practical<br>defender.</h3><p>Follow the evidence.<br>Make the right call.</p><ul><li>Session security &amp; revocation</li><li>Network traffic analysis</li><li>Object-level access control</li><li>Containment &amp; recovery</li></ul><div class="path-bottom"><span>4 missions <span aria-hidden="true">/</span> 750 XP</span><a href="/app#paths/defender" aria-label="Explore The practical defender">↗</a></div></article>
+          <article class="path-card"><div class="path-meta"><span class="path-number">03</span><span class="level-tag">ADVANCED</span></div><h3>Security<br>operations.</h3><p>Connect the signals.<br>Close the investigation.</p><ul><li>Threat modeling</li><li>Multi-source event correlation</li><li>Release hardening</li><li>Operation Blue Horizon</li></ul><div class="path-bottom"><span>4 missions <span aria-hidden="true">/</span> 1,300 XP</span><a href="/app#paths/operations" aria-label="Explore Security operations">↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section container">
+      <div class="capstone-panel"><div class="capstone-copy"><p class="eyebrow">03 / THE FINAL MISSION</p><span class="outline-tag">ADVANCED CAPSTONE</span><h2>Operation<br><span class="gradient-text">Blue Horizon.</span></h2><p>An unexpected transfer. An exposed credential. A trail of evidence waiting to be connected. Bring everything you’ve learned to one complete incident investigation.</p><a href="/app#unit/final-mission" class="text-link">Build toward the final mission <span aria-hidden="true">↗</span></a><span class="capstone-note">Unlocks after the preceding missions.</span></div><div class="case-file"><div class="file-heading"><span class="mono">CASE FILE / BZ-012</span><span class="outline-tag">TRAINING SCENARIO</span></div><h3>Five findings.<br>One defensible conclusion.</h3><ol><li><span>01</span>Identify the affected workstation</li><li><span>02</span>Trace the suspicious destination</li><li><span>03</span>Find the exposed credential</li><li><span>04</span>Choose your containment action</li><li><span>05</span>Validate the recovery</li></ol><div class="file-footer"><span>45 MIN <span aria-hidden="true">/</span> +500 XP</span><span class="seal" aria-label="Blue Horizon achievement">BZ</span></div></div></div>
+    </section>
+
+    <section class="faq-section section container" id="questions"><div><p class="eyebrow">BEFORE YOU BEGIN</p><h2>A little clarity.<br><span class="muted-heading">Then, let’s get to work.</span></h2></div><div class="faq-list"><details><summary>Do I need cybersecurity experience?<span aria-hidden="true">+</span></summary><p>No. The first path starts with networking, Linux permissions, and web security concepts. Later missions build on those foundations.</p></details><details><summary>What do the practice labs run?<span aria-hidden="true">+</span></summary><p>The V1 labs use fictional evidence and a contained, read-only command simulation. You can inspect logs and configurations without installing a virtual machine or touching live systems.</p></details><details><summary>How does the tutor work?<span aria-hidden="true">+</span></summary><p>Built-in lesson explanations and hints are available immediately. If the administrator configures an AI provider, you can opt in to AI guidance for a question.</p></details><details><summary>What do I earn as I progress?<span aria-hidden="true">+</span></summary><p>Passing assessments earns XP, unlocks missions, and adds to your saved learning record. Complete paths to earn achievements, then finish the capstone to earn Blue Horizon. These are training achievements, not accredited certifications.</p></details></div></section>
+
+    <section class="closing-section"><div class="container closing-inner"><p class="eyebrow">YOUR NEXT CHAPTER STARTS WITH ONE MISSION.</p><h2>Curiosity got you here.<br><span class="gradient-text">See how far it takes you.</span></h2><a href="/app?mode=register" class="button">Start your first mission <span aria-hidden="true">↗</span></a><p>No prior cybersecurity experience required.</p></div></section>
+  </main>
+  <footer class="container site-footer"><div><a href="/" class="wordmark"><img src="/static/favicon.svg" width="28" height="28" alt=""><span>BlueZone<span class="brand-period">.</span></span></a><p>Learn deliberately. Defend with evidence.</p></div><nav aria-label="Footer navigation"><a href="#curriculum">Learning paths</a><a href="#questions">Questions</a><a href="/app">Your workspace ↗</a></nav><div class="footer-bottom"><span>© 2026 BlueZone</span><span>BUILT FOR THE DEFENDER YOU’RE BECOMING.</span></div></footer>
+</body>
+</html>

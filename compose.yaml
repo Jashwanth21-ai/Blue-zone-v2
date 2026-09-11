@@ -1,0 +1,16 @@
+services:
+  bluezone:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      BLUEZONE_ENV: ${BLUEZONE_ENV:-development}
+      BLUEZONE_ORIGIN: ${BLUEZONE_ORIGIN:-http://127.0.0.1:8000}
+      BLUEZONE_MAX_USERS: ${BLUEZONE_MAX_USERS:-100}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-}
+    volumes:
+      - bluezone-data:/app/data
+    restart: unless-stopped
+volumes:
+  bluezone-data:
